@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kotlin18</string>
+    <string name="ingrese_entero">Ingrese Entero</string>
+    <string name="ingrese_un_texto">Ingrese un Texto</string>
+    <string name="texto_almacenado">Texto Almacenado</string>
+    <string name="ingrese_un_numero_decimal">Ingrese un Numero Decimal</string>
+</resources>
