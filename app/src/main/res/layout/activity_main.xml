@@ -29,6 +29,7 @@
         android:hint="Ingrese un Entero"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +39,7 @@
         android:id="@+id/etTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Ingrese un Texto"
         android:inputType="text"
@@ -63,7 +64,7 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:minHeight="48dp"
         android:text="Switch"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +81,7 @@
         android:hint="Ingrese un Decimal"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/switch1"
@@ -100,23 +102,47 @@
         android:id="@+id/btBorrar"
         android:layout_width="118dp"
         android:layout_height="48dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginEnd="56dp"
         android:backgroundTint="#D1782B"
         android:minHeight="48dp"
         android:text="Borrar"
-        app:layout_constraintStart_toEndOf="@+id/btGuardar"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="@+id/btGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btGuardar" />
 
     <Button
         android:id="@+id/btGuardar"
         android:layout_width="131dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#5BA82F"
         android:minHeight="48dp"
         android:text="Guardar"
+        android:textColor="#3E2723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDecimal" />
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btBorrar"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/btGuardar" />
+
+    <TextView
+        android:id="@+id/tvSwitch"
+        android:layout_width="66dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="124dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switch1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
